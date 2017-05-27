@@ -1,2 +1,5 @@
 # nodejs-socketio-notification
-Push notification using Nodejs, Socket.io
+Push notification server using Nodejs, Socket.io<br />
+
+npm install<br />
+grunt<br />
