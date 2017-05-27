@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Socket notification</title>
+
+    <style media="screen">
+        body {
+            padding: 50px
+        }
+
+        #status {
+            width: 250px;
+            padding: 10px;
+            font-size: 14px;
+            margin-left: 20%;
+        }
+
+        #booking-form {
+            width: 250px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+<div id="status">
+</div>
+<br>
+<br>
+<br>
+<div id="booking-form">
+    Floor: <input type="text" id="table" value="1" size="10"/> <br>
+    Table: <input type="text" id="floor" value="1" size="10"/> <br>
+    Comment: <textarea name="" id="comment" cols="30" rows="10" placeholder="Enter your comment...." size="10"></textarea> <br>
+    <button id="sendNotification">Send notification</button>
+    <span id="message"></span>
+</div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>
